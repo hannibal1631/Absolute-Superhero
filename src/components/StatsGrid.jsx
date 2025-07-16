@@ -1,12 +1,12 @@
 function StatsGrid({ title, stats }) {
   return (
     <div>
-      <h2>{title}</h2>
-      <div className='flex md:flex-row mt-2 gap-7 text-center flex-wrap'>
+      <h2 className="capitalize text-2xl font-bold">{title}</h2>
+      <div className='flex md:flex-row gap-7 text-center flex-wrap'>
         {Object.entries(stats).map(([key, value]) => (
           <div key={key}>
-            <h3 className='capitalize'>{key.replace(/-/g, ' ')}</h3>
-            <h3>{Array.isArray(value) ? value[0] : value}</h3>
+            <h3 className='capitalize text-lg font-semibold'>{key.replace(/-/g, ' ')}</h3>
+            <p className="text-xl">{Array.isArray(value) ? value[0] : value}</p>
           </div>
         ))}
       </div>
