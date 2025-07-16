@@ -1,5 +1,3 @@
-import React from 'react'
-
 function HeroIntro({hero}) {
     return (
       <div className='md:w-[35%] md:h-full w-full h-[30%] rounded-2xl relative group overflow-hidden'>

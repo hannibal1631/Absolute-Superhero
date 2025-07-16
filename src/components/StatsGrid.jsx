@@ -1,6 +1,4 @@
-import React from 'react';
-
-const StatsGrid = ({ title, stats }) => {
+function StatsGrid({ title, stats }) {
   return (
     <div>
       <h2>{title}</h2>
@@ -14,6 +12,6 @@ const StatsGrid = ({ title, stats }) => {
       </div>
     </div>
   );
-};
+}
 
 export default StatsGrid;

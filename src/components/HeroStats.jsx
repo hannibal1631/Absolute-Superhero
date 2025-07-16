@@ -1,4 +1,3 @@
-import React from 'react'
 import StatsGrid from './StatsGrid';
 import DetailGrid from './DetailGrid';
 
