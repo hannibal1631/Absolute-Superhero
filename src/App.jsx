@@ -5,8 +5,9 @@ import HeroCard from './components/HeroCard';
 function App() {
   return (
     <>
-      <div className='text-2xl text-red-500'>Superhero</div>
-      <HeroCard heroId={70} />
+      <div className='bg-indigo-950 h-full w-full absolute flex justify-center items-center'>
+        <HeroCard heroId={643} />
+      </div>
     </>
   );
 }
