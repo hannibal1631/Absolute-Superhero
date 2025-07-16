@@ -3,8 +3,8 @@ function DetailGrid({stats}) {
       <div className='flex flex-col gap-3'>
         {Object.entries(stats).map(([key, value]) => (
           <div key={key}>
-            <h3 className='capitalize text-2xl font-bold'>{key.replace(/-/g, ' ')}</h3>
-            <p className="text-xl">{value}</p>
+            <h3 className='capitalize md:text-2xl md:font-bold'>{key.replace(/-/g, ' ')}</h3>
+            <p className="md:text-xl">{value}</p>
           </div>
         ))}
       </div>
