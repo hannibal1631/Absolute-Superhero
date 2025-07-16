@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div className='bg-indigo-950 h-full w-full absolute flex justify-center items-center'>
-        <HeroCard heroId={643} />
+        <HeroCard heroId={70} />
       </div>
     </>
   );
