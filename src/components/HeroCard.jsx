@@ -18,7 +18,7 @@ function HeroCard({ heroId }) {
   if (!hero) return <p>Loading...</p>;
 
   return (
-    <div className='relative md:w-[80%] w-[90%] md:h-[70%] h-[90%] flex flex-col md:flex-row bg-sky-600 rounded-2xl'>
+    <div className='relative md:w-[80%] w-[90%] md:h-[70%] h-[90%] flex flex-col md:flex-row bg-indigo-950 rounded-2xl'>
       <HeroIntro hero={hero} />
       <HeroStats heroStats={hero} />
     </div>
