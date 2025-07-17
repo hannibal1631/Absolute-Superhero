@@ -12,7 +12,9 @@ const Search = ({ setHeroId }) => {
 
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_CONFIG_BASE_URL}/search/${debouncedQuery}`
+          `${import.meta.env.VITE_CONFIG_BASE_URL}/${
+            import.meta.env.VITE_CONFIG_API_KEY
+          }/search/${debouncedQuery}`
         );
         const data = await response.json();
 
@@ -38,7 +40,7 @@ const Search = ({ setHeroId }) => {
         value={query}
         placeholder='Search superheroes...'
         onChange={(e) => setQuery(e.target.value)}
-        className='w-full p-2 border rounded-md text-black'
+        className='w-full p-2 border rounded-md bg-white text-xl text-black'
       />
       {error && <p className='text-red-500 mt-2'>{error}</p>}
     </div>
