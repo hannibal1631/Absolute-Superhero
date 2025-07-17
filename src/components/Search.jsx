@@ -4,7 +4,7 @@ import useDebounce from '../hooks/useDebounce';
 const Search = ({ setHeroId }) => {
   const [query, setQuery] = useState('');
   const [error, setError] = useState('');
-  const debouncedQuery = useDebounce(query, 500);
+  const debouncedQuery = useDebounce(query, 700);
 
   useEffect(() => {
     const fetchHero = async () => {
@@ -22,7 +22,7 @@ const Search = ({ setHeroId }) => {
           setError(data.error);
         } else {
           const firstResult = data.results[0];
-          setHeroId(firstResult.id); // 🔁 Update the heroId in App
+          setHeroId(firstResult.id);
           setError('');
         }
       } catch (err) {
